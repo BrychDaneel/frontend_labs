@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal; }
+
+ul {
+  padding-left: 1.4em;
+  list-style: square; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* конец кода сброса стилей браузера */
+body {
+  background: url("../images/head.png") no-repeat, url("../images/background2.png");
+  background-size: 100%, auto auto; }
+
+.mainWrapper {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.headWrapper {
+  width: 100%;
+  background: rgba(50, 50, 50, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px; }
+
+.mainWrapper {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  display: flex;
+  box-shadow: 0 0 10px 5px rgba(30, 30, 30, 0.8); }
+
+.footWrapper {
+  margin-top: 50px;
+  color: white; }
+
+@keyframes logoAnim {
+  from {
+    transform: scale(0.1) rotate(360deg);
+    opacity: 0.3; }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1; } }
+@keyframes phoneAnim {
+  from {
+    transform: scale(0.1);
+    opacity: 0.3; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+header {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center; }
+  header .logo {
+    float: left;
+    box-sizing: border-box;
+    height: 80%;
+    border: 20px; }
+  header h1 {
+    text-transform: uppercase;
+    font-size: 1.2em; }
+  header .phone {
+    float: left;
+    font-size: 45px;
+    float: left;
+    padding-left: 30px;
+    background: url(../images/operators.png) 0px 10px no-repeat;
+    background-size: 20px, 100%;
+    animation: phoneAnim 1s; }
+  header .login {
+    float: right;
+    margin: auto 0; }
+  header .login a {
+    font-size: 1.5em;
+    color: white;
+    border: 4px solid green;
+    border-radius: 15px;
+    padding: 7px 15px;
+    margin-left: 15px;
+    text-decoration: none; }
+  header .login a:hover {
+    background: green; }
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 300px;
+  margin-bottom: 30px;
+  background: linear-gradient(to bottom, #ff0013, #801b00);
+  border-radius: 50px;
+  box-shadow: 0 0 10px 5px rgba(30, 30, 30, 0.8); }
+  nav ul {
+    display: flex;
+    list-style: none;
+    flex-flow: wrap; }
+  nav li {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.7em;
+    border-left: 1px solid rgba(148, 0, 12, 0.4);
+    text-align: center;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+    flex-basis: 100px; }
+  nav li:hover {
+    transform: scale(1.4);
+    border: 1px solid rgba(148, 0, 12, 0.4);
+    background: linear-gradient(to bottom, #ff0013, #801b00);
+    transition: transform 0.3s; }
+  nav li:first-child {
+    border-left: none; }
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Myriad Pro Regular"; }
+
+@font-face {
+  font-family: "Georgia Regular";
+  src: url("../fonts/Georgia.eot");
+  src: url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+aside {
+  padding-top: 30px;
+  border-right: 1px solid rgba(200, 200, 200, 0.6); }
+  aside h2 {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 40px; }
+  aside ul {
+    list-style: none;
+    font-size: 1.2em;
+    padding-left: 0; }
+  aside li {
+    display: block;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-clip: border-box;
+    transition: background 0.5s;
+    transition-delay: 0.1s; }
+    aside li:hover {
+      background: rgba(0, 150, 20, 0.7);
+      transition: background 0.3s; }
+  aside a {
+    text-decoration: none;
+    color: #787878;
+    font-family: "Georgia Regular"; }
+
+@font-face {
+  font-family: "PF Centro Sans Pro Extra Thin";
+  src: url("../fonts/PFCentroSansPro-XThin.eot");
+  src: url("../fonts/PFCentroSansPro-XThin.eot?#iefix") format("embedded-opentype"), url("../fonts/PFCentroSansPro-XThin.woff") format("woff"), url("../fonts/PFCentroSansPro-XThin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+main {
+  order: 1;
+  padding: 20px; }
+
+.productSearch {
+  margin-bottom: 20px;
+  display: flex; }
+
+main h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: normal;
+  color: rgba(120, 120, 120, 0.8);
+  margin-bottom: 20px; }
+
+input[type="search"] {
+  border: 1px #64c8ff solid;
+  background: transparent;
+  padding: 5px;
+  margin-left: 20px; }
+  input[type="search"]:focus {
+    background: rgba(100, 200, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(100, 200, 255, 0.4); }
+
+input[type="image"] {
+  border: 1px solid #64c8ff;
+  background: #64c8ff;
+  border-radius: 0 10px 10px 0;
+  margin-left: 0px;
+  padding: 5px 10px 5px 5px;
+  height: 15px; }
+
+input[type="image"]:hover {
+  background: #96e6ff; }
+
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around; }
+
+.gallery figure {
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 0 10px;
+  border-radius: 20px 20px 20px 20px;
+  transition: transform 0.5s;
+  flex: 1;
+  flex-basis: 200px;
+  margin: 20px;
+  background: #f8f0e4; }
+
+.gallery .price {
+  float: right;
+  font-size: 1.7em;
+  color: green; }
+
+.gallery figure:hover {
+  transform: scale(1.4);
+  transition: transform 0.5s; }
+
+.gallery figure img {
+  width: 100%;
+  border-radius: 20px 20px 0 0; }
+
+.gallery figcaption {
+  padding: 10px;
+  font-size: 1.3em;
+  font-family: "PF Centro Sans Pro Extra Thin";
+  font-style: italic;
+  font-weight: bold; }
+
+footer .advWrapper {
+  background: rgba(255, 255, 255, 0.6); }
+footer .infoWrapper {
+  background: 100px 0 url(../images/footer.png);
+  padding-top: 20px; }
+footer .advList {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-clip: border-box;
+  max-width: 1000px;
+  margin: 0 auto; }
+footer .adv {
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(150, 150, 150, 0.7);
+  color: black;
+  background: rgba(100, 200, 255, 0.1); }
+footer .adv h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: -10px -10px 10px -10px;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  background: rgba(100, 200, 255, 0.5); }
+footer .adv:first-of-type {
+  background: rgba(0, 150, 20, 0.4); }
+  footer .adv:first-of-type h2 {
+    background: rgba(0, 150, 20, 0.7); }
+footer .adv:last-of-type {
+  background: rgba(255, 70, 0, 0.5); }
+  footer .adv:last-of-type h2 {
+    background: rgba(255, 70, 0, 0.9); }
+footer .info {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+footer .logo {
+  height: 70px; }
+footer .logo img {
+  height: 100%;
+  margin-bottom: 5px; }
+footer .copy {
+  font-size: 0.8em; }
+footer small {
+  padding: 0 20px 0 20px;
+  margin-left: 30px; }
+footer .payments {
+  box-sizing: border-box;
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  padding: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
