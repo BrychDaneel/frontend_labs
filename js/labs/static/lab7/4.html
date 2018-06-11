@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset = "utf8">
+        <title>Лаба 2 :: Задание 3</title>
+        <script src="../jquery-3.3.1.min.js"></script>
+        <script src="4.js"></script>
+        <style>
+            .formula p, .method p{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="formula">
+            <h2>Функция</h2>
+            <p>
+                <input type="radio" name="f" value="0" checked />
+                <img src = "4/1.png">
+            </p>
+            <p>
+                <input type="radio" name="f" value="1" />
+                <img src = "4/2.png">
+            </p>
+            <p>
+                <input type="radio" name="f" value="2" />
+                <img src = "4/3.png">
+            </p>
+            <p>
+                <input type="radio" name="f" value="3" />
+                <img src = "4/4.png">
+            </p>
+        </div>
+
+        <div class="method">
+            <h2>Метод</h2>
+            <p>
+                <input type="radio" name="method" value="0" checked />
+                <img src = "4/m1.png">
+            </p>
+            <p>
+                <input type="radio" name="method" value="1" />
+                <img src = "4/m2.png">
+            </p>
+        </div>
+
+        <div class="params">
+            <h2>Параметры интегрирования</h2>
+            <p>
+                <label>Начальное X</label>
+                <input type="text" class="start"/>
+            </p>
+            <p>
+                <label>Конечное X:</label>
+                <input type="text" class="stop"/>
+            </p>
+            <p>
+                <label>Количество интервалов:</label>
+                <input type="text" class="step"/>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <input type="submit" value="Посчитать"/>
+            <p>
+        </div>
+
+        <output class="output">
+            <h2>Результат</h2>
+        </output>
+
+    </body>
+</html>

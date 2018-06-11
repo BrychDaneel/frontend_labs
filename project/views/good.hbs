@@ -1,0 +1,24 @@
+{{#>page title="Доставка еды :: Херпоймичто"}}
+
+<div class="good">
+
+<h1>{{good.name}}</h1>
+
+<figure>
+<img src="{{good.img}}">
+<figcaption>
+    <span class="price">{{toPrice good.price}}<span>
+    <a href="/good/{{good.id}}/buy">купить</a>
+</figcaption>
+</figure>
+
+<div class="description">
+<h2>Описание</h2>
+<pre>
+{{good.desc}}
+</pre>
+</div>
+
+</div>
+
+{{/page}}

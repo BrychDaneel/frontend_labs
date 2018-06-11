@@ -1,0 +1,34 @@
+<div class="basket">
+
+{{#if basket.length}}
+<table class="list">
+    <tbody>
+        {{#each basket}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{toPrice price}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<hr>
+<table class="total">
+    <tbody>
+        <tr>
+            <td>Итого:</td>
+            <td>{{toPrice basket.total}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="control">
+<a href="/basket/clear" class="clear">Очистить</a>
+<a href="/basket/buy" class="buy">Купить</a>
+</div>
+
+{{else}}
+  <p class="empty">Пусто</p>
+{{/if}}
+
+</div>

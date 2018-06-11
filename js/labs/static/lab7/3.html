@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset = "utf8">
+        <title>Лаба 7 :: Задание 3</title>
+        <script src="../jquery-3.3.1.min.js"></script>
+        <script src="3.js"></script>
+        <style>
+            input{
+                width: 200px;
+                font-size: 2em;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="submit">
+            <p>
+                <label>Тип на проверку</label>
+                <input type="text" class="type"/>
+            </p>
+            <p>
+                <input type="submit" value="f(5)" data-user="[5]"/>
+            </p>
+            <p>
+                <input type="submit" value="f(new Number(5))" data-user="[new Number(5)]"/>
+            </p>
+            <p>
+                <input type="submit" value="f('abc')" data-user="['abc']"/>
+            </p>
+            <p>
+                <input type="submit" value="f({1: 1, 2: 2})" data-user="[{1: 1, 2: 2}]"/>
+            </p>
+            <p>
+                <input type="submit" value="f([1, 2])" data-user="[[1, 2]]"/>
+            </p>
+            <p>
+                <input type="submit" value="f(1, 2)" data-user="[1, 2]"/>
+            </p>
+            <p>
+                <input type="submit" value="f('a', 'b')" data-user="['a', 'b']"/>
+            </p>
+        </div>
+
+        <output class="output">
+        </output>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+{{#>page_short title="Доставка еды :: Вход"}}
+
+<form action="" method="POST" class="loginForm">
+<p>
+<label>Имя пользователя</label>
+<input type="text" name="name" required placeholder="name">
+</p>
+<p>
+<label>Пароль</label>
+<input type="password" name="password" required placeholder="password">
+</p>
+
+{{#if error}}
+<div class="errors">
+    <ul>
+        <li>Проверьте правильность сочетания логин/пароль</li>
+    </ul>
+</div>
+{{/if}}
+
+<input type="submit" value="Вход">
+</form>
+
+{{/page_short}}

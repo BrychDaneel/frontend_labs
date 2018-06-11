@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<title>{{title}}</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="main">
+
+<div class="headWrapper">
+{{>header}}
+</div>
+
+
+<div class="navWrapper">
+{{>nav}}
+</div>
+
+<div class="mainWrapper">
+<main>
+
+{{> @partial-block }}
+
+</main>
+
+{{>aside}}
+
+</div>
+
+
+<div class="footWrapper">
+{{>footer}}
+</div>
+
+</body>
+</html>

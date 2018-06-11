@@ -1,0 +1,29 @@
+<header>
+
+<a href="/" class="logo">
+<img src="/static/images/logo.png" alt="logo">
+</a>
+
+<div class="call">
+<h1>
+Звоните!
+</h1>
+<div class="phone">
+555 55 55
+</div>
+</div>
+
+{{#if user}}
+    <div class="user">
+    {{!-- <span class="name">{{user}}</span> --}}
+    <a href="/basket">Корзина</a>
+    <a href="/logout">Выход</a>
+    </div>
+{{else}}
+    <div class="login">
+    <a href="/login">Войти</a>
+    <a href="/register">Регистрация</a>
+    </div>
+{{/if}}
+
+</header>

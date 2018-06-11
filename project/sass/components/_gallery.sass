@@ -1,0 +1,43 @@
+.gallery
+    display: flex
+    flex-flow: wrap
+    justify-content: space-around
+
+
+    figure
+        display: inline-block
+        margin: 10px
+        box-shadow: 0 0 10px
+        border-radius: 20px 20px 20px 20px
+        transition: transform 0.5s
+        flex: 1
+        flex-basis: 200px
+        margin: 20px
+        background: #f8f0e4
+
+    a
+        text-decoration: none
+        color: black
+
+    .price
+        float: right
+        font-size: 1.7em
+        color: green
+
+
+    figure:hover
+        transform: scale(1.4)
+        transition: transform 0.5s
+
+
+    figure img
+        width: 100%
+        border-radius: 20px 20px 0 0
+
+
+    figcaption
+        padding: 10px
+        font-size: 1.3em
+        font-family: 'PF Centro Sans Pro Extra Thin'
+        font-style: italic
+        font-weight: bold

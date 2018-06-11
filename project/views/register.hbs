@@ -1,0 +1,39 @@
+{{#>page_short title="Доставка еды :: Регистрация"}}
+
+<script src="/static/scripts/jquery.js"></script>
+<script src="/static/scripts/register.js"></script>
+
+<h1>Регистрация</h1>
+
+<form action="" method="POST" class="registerForm">
+<p>
+<label>Имя пользователя</label>
+<input type="text" name="name" value="{{name}}" required placeholder="name">
+</p>
+<p>
+<label>Электронный адрес</label>
+<input type="email" name="email" value="{{email}}" required placeholder="mail@example.com">
+</p>
+<p>
+<label>Пароль</label>
+<input type="password" class="pwd1" name="password" required placeholder="password">
+</p>
+<p>
+<label>Пароль</label>
+<input type="password" class="pwd2" required placeholder="password">
+</p>
+
+<div class="errors">
+    <ul>
+        {{#if exist}}
+        <li>Логин или электронный адрес уже занят</li>
+        {{/if}}
+
+        <li class="mismatch" hidden>Пароли не совпадают</li>
+    </ul>
+</div>
+
+<input type="submit" value="Регистрация">
+</form>
+
+{{/page_short}}

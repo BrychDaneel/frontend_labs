@@ -1,0 +1,14 @@
+
+<div class="gallery">
+
+{{#each goods}}
+<figure>
+<a href="/good/{{id}}">
+<img src="{{img}}">
+<figcaption>{{name}}<span class="price">{{toPrice price}}</span>
+</figcaption>
+</a>
+</figure>
+{{/each}}
+
+</div>
